@@ -1,0 +1,118 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2f2f2f; /* Dark gray background */
+    color: #ffffff; /* White text color for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add padding */
+    background-color: #1a1a1a; /* Slightly darker header background */
+}
+
+/* Logo styles */
+.logo img {
+    width: 200px; /* Increased width for the logo */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Space between nav items */
+}
+
+nav a {
+    color: #ffffff; /* White text for navigation links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+nav a:hover {
+    color: #f0f0f0; /* Change color on hover */
+}
+
+/* Main content styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    padding: 20px;
+}
+
+/* Login and Sign Up container styles */
+.login-container {
+    max-width: 400px; /* Set maximum width */
+    margin: 50px auto; /* Center horizontally */
+    padding: 20px; /* Add padding */
+    background-color: rgba(240, 240, 240, 0.9); /* Slightly transparent light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+/* Form styles */
+input, select, textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+    margin: 5px 0; /* Space between inputs */
+    border: 1px solid #cccccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #e0e0e0; /* Light gray input background */
+    color: #333; /* Dark text in inputs for contrast */
+}
+
+button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* About, Contact, and Update sections */
+h2 {
+    text-align: center; /* Center headings */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+h3 {
+    margin-top: 20px; /* Space above subheading */
+}
+
+/* Contact Information Styles */
+.content p {
+    text-align: center; /* Center text */
+    line-height: 1.5; /* Improve line spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack header items on small screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+        gap: 10px; /* Space between nav items */
+    }
+    .login-container {
+        width: 90%; /* Full width on small screens */
+        margin: 20px auto; /* Center horizontally */
+    }
+}
